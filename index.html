@@ -1,1 +1,17 @@
-Test
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>PhoneGap-Beispiel</title>
+  <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+  <script type="text/javascript" charset="utf-8">
+     function onLoad(){
+          document.addEventListener("deviceready", onDeviceReady, true);
+     }
+     function onDeviceReady(){
+          navigator.notification.alert("PhoneGap funktioniert!");
+     }
+  </script>
+  </head>
+  <body onload="onLoad();">
+       <h1>Herzlich Willkommen bei PhoneGap</h1>
+  </body>
